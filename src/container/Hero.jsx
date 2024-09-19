@@ -22,7 +22,7 @@ const Hero = () => {
           <div className="self-stretch mt-[-13.00px] ml-[-12.00px] [-webkit-text-stroke:6px_#1f1f67] text-[140px] text-center leading-[156.8px]  [text-shadow:5px_8px_4px_#2d2d7280] [font-family:'Peralta',Helvetica] font-normal text-[#ffbc6c] tracking-[0] overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:1] [-webkit-box-orient:vertical]">
             AirDoge
           </div>
-          <div className=" self-stretch ml-[-2.00px] [text-shadow:1px_3px_4px_#ffbc6d] [-webkit-text-stroke:1px_#ffbc6d] [font-family:'Peralta',Helvetica] font-normal text-black text-[32px] text-center tracking-[0] leading-[33.3px]">
+          <div className="flex-initial  ml-[-2.00px] [text-shadow:1px_3px_4px_#ffbc6d] [-webkit-text-stroke:1px_#ffbc6d] [font-family:'Peralta',Helvetica] font-normal text-black text-[32px] text-center tracking-[0] leading-[33.3px]">
             Unleashing Goodness with AirDoge!
           </div>
           <p className=" w-[609px] font-medium [-webkit-line-clamp:4] [font-family:'Atma',Helvetica] text-black text-[28px] text-justify tracking-[0.56px] leading-[39.2px] overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-box-orient:vertical]">
@@ -38,7 +38,7 @@ const Hero = () => {
               </div>
               <div className='inline-flex flex-col items-center gap-2 relative flex-[0_0_auto] '>
                 <div className="relative w-fit mt-[-1.00px] [text-shadow:1px_3px_4px_#ffbc6d] [font-family:'Atma',Helvetica] font-semibold text-black text-sm text-center tracking-[0.72px] leading-[50.4px] whitespace-nowrap">
-                  $0.00000000000000104
+                  $0.0000000000188
                 </div>
               </div>
             </div>

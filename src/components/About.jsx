@@ -9,7 +9,7 @@ const About = () => {
       <div
         id='C2C1'
         className='space-y-4 flex flex-col'>
-        <div className="self-start [text-shadow:5px_8px_4px_#2d2d7280] [-webkit-text-stroke:4px_#1f1f67] [font-family:'Peralta',Helvetica] font-normal text-[#ffbc6c] text-[80px] text-center tracking-[0] leading-[89.6px] whitespace-nowrap [-webkit-line-clamp:1] overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-box-orient:vertical]">
+        <div className="lg:self-start [text-shadow:5px_8px_4px_#2d2d7280] [-webkit-text-stroke:4px_#1f1f67] [font-family:'Peralta',Helvetica] font-normal text-[#ffbc6c] text-[80px] text-center tracking-[0] leading-[89.6px] whitespace-nowrap [-webkit-line-clamp:1] overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-box-orient:vertical]">
           ABOUT
         </div>
 

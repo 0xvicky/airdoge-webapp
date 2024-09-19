@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+// import BuyDoge from "./Buydoge";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -8,46 +8,47 @@ const Navbar = () => {
   };
 
   return (
-    <div className='flex items-center justify-between px-4 py-4 md:px-12 md:py-5 fixed top-[49px] left-[34px] w-full z-50 bg-white shadow-lg rounded-full'>
+    <div className='flex items-start gap-[140px] px-12 py-5 fixed top-[49px] left-[34px] rounded-[50px] z-50 w-full flex-shrink'>
       {/* Logo and Heading */}
-      <div className='flex items-center'>
+      <div className='flex items-center gap-5 relative flex-[0_0_auto]'>
         <img
-          className='w-[50px] h-[50px] md:w-[84px] md:h-[84px] object-cover'
+          className='relative w-[84px] h-[84px] mt-[-8.00px] mb-[-16.00px] ml-[-10.00px] object-cover'
           alt='Logo'
           src='https://c.animaapp.com/MIx9ki2W/img/logo-1-1@2x.png'
         />
-        <div className="heading_24 text-[#f7aa49] text-center font-['Peralta'] text-xl md:text-[1.75rem] leading-[112%] ml-3">
+        <div className="heading_24 overflow-hidden rounded-bl-sm rounded-br-sm [-webkit-text-stroke:2px_#1f1f67] text-[#f7aa49] text-center font-['Peralta'] text-[1.75rem] leading-[112%]">
           AirDoge
         </div>
       </div>
 
-      {/* Menu links - shown on larger screens */}
-      <div className='hidden lg:flex items-center'>
-        <div className='inline-flex gap-8 md:gap-12'>
+      {/* Desktop Menu links */}
+      <div className='hidden lg:flex flex-col w-[677px] h-[70px] items-center justify-center gap-2.5 px-12 py-[18px] bg-[#d4d4d433] rounded-[200px] border-[3px] border-solid border-black shadow-[5px_8px_4px_#000000] backdrop-blur-2xl'>
+        <div className='inline-flex h-[34.7px] items-center justify-center gap-12 relative'>
           <a
-            className="text-black text-lg md:text-[28px] font-['Bubblegum_Sans']"
+            className="relative w-fit [font-family:'Bubblegum_Sans',Helvetica] font-normal text-black text-[28px] text-center tracking-[0] leading-[31.4px]"
             href='#'>
             Home
           </a>
           <a
-            className="text-black text-lg md:text-[28px] font-['Bubblegum_Sans']"
+            className="relative w-fit [font-family:'Bubblegum_Sans',Helvetica] font-normal text-black text-[28px] text-center tracking-[0] leading-[31.4px]"
             href='#tokenomics'>
             Tokenomics
           </a>
           <a
-            className="text-black text-lg md:text-[28px] font-['Bubblegum_Sans']"
+            className="relative flex w-fit [font-family:'Bubblegum_Sans',Helvetica] font-normal  text-black lg:text-[28px]  tracking-[0] leading-[28px]"
             href='#how_to_buy'>
-            How to buy?
+            How to <br />
+            buy?
           </a>
           <a
-            className="text-black text-lg md:text-[28px] font-['Bubblegum_Sans']"
+            className="relative w-fit [font-family:'Bubblegum_Sans',Helvetica] font-normal text-black text-[28px] text-center tracking-[0] leading-[31.4px]"
             href='#roadmap'>
             Roadmap
           </a>
         </div>
       </div>
 
-      {/* Hamburger Menu for tablet/mobile */}
+      {/* Hamburger Menu button for mobile/tablet */}
       <div className='lg:hidden flex items-center'>
         <button
           className='text-black focus:outline-none'
@@ -68,43 +69,36 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Dropdown Menu for mobile/tablet - shown when the hamburger is clicked */}
+      {/* Dropdown Menu for mobile/tablet */}
       {isMenuOpen && (
-        <div className='absolute top-[100px] left-0 w-full bg-white shadow-lg lg:hidden flex flex-col items-center py-4 z-40'>
+        <div className='absolute top-full left-0 w-full bg-white lg:hidden flex flex-col items-center py-4 z-40'>
           <a
-            className='py-2 px-4 text-black text-lg font-semibold'
+            className='py-2 px-4 text-black text-[20px] font-semibold'
             href='#'>
             Home
           </a>
           <a
-            className='py-2 px-4 text-black text-lg font-semibold'
+            className='py-2 px-4 text-black text-[20px] font-semibold'
             href='#tokenomics'>
             Tokenomics
           </a>
           <a
-            className='py-2 px-4 text-black text-lg font-semibold'
+            className='py-2 px-4 text-black text-[20px] font-semibold'
             href='#how_to_buy'>
             How to buy?
           </a>
           <a
-            className='py-2 px-4 text-black text-lg font-semibold'
+            className='py-2 px-4 text-black text-[20px] font-semibold'
             href='#roadmap'>
             Roadmap
           </a>
         </div>
       )}
 
-      {/* BuyDoge component */}
+      {/* BuyDoge Button */}
       <div
-        className={`hidden lg:flex items-center px-6 py-3 bg-[#ff8c00] hover:bg-[#fceeac] rounded-full border-2 border-black shadow-lg`}>
-        <div className="[font-family:'Bubblegum_Sans'] text-lg md:text-[28px] text-black">
-          Buy $ADOGE
-        </div>
-      </div>
-
-      {/* BuyDoge button for mobile */}
-      <div className='lg:hidden bg-[#ff8c00] hover:bg-[#fceeac] flex items-center px-6 py-3 rounded-full shadow-lg border-2 border-black'>
-        <div className="[font-family:'Bubblegum_Sans'] text-lg text-black">
+        className={`border-black flex items-center shadow-[5px_8px_4px_#000000] px-[13px] py-[18px] [-webkit-backdrop-filter:blur(25px)_brightness(100%)] relative w-[194px] flex-col rounded-[200px] backdrop-blur-[25px] backdrop-brightness-[100%] gap-2.5 border-[3px] border-solid h-[70px] justify-center bg-[#ff8c00] hover:bg-[#fceeac]`}>
+        <div className="[font-family:'Bubblegum_Sans',Helvetica] w-fit tracking-[0] text-[28px] text-black font-normal text-center leading-[31.4px]">
           Buy $ADOGE
         </div>
       </div>

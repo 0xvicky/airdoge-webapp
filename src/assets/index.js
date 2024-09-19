@@ -1,0 +1,11 @@
+import hero from "./hero.svg";
+import hero1 from "./HeroImg1.svg";
+import aboutDog from "./aboutdog.svg";
+import token1 from "./token1.svg";
+import htbn1 from "./htb1.svg";
+import htbn2 from "./htb2.svg";
+import htbn3 from "./htb3.svg";
+import htbn4 from "./htb4.svg";
+import rdmap2 from "./rdmap2.svg";
+import footerlogo from "./footerlogo.svg";
+export {hero, hero1, aboutDog, token1, htbn1, htbn2, htbn3, htbn4, rdmap2, footerlogo};
